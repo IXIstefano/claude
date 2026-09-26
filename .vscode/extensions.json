@@ -1,0 +1,4 @@
+{
+  // Para editar este kit: PowerShell (scripts) e EditorConfig (UTF-8 com BOM nos .ps1).
+  "recommendations": ["ms-vscode.powershell", "editorconfig.editorconfig"]
+}

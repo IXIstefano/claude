@@ -1,0 +1,14 @@
+// Configurações deste projeto (sobrepõem as configurações de usuário).
+{
+  // Usa o TypeScript instalado no projeto (node_modules), igual ao do build.
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // Tailwind: não marca @tailwind/@apply/@theme como erro no CSS
+  // e dá autocomplete dentro de cn(), clsx() e cva() (shadcn/ui).
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.classFunctions": ["cn", "clsx", "cva", "cx"],
+
+  // Encontra o eslint.config.* certo mesmo em subpastas (monorepos).
+  "eslint.workingDirectories": [{ "mode": "auto" }]
+}

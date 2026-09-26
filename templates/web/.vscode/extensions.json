@@ -1,0 +1,10 @@
+{
+  // Extensões sugeridas a quem abrir este projeto no VS Code.
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
+    "yoavbls.pretty-ts-errors"
+  ]
+}

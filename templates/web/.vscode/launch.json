@@ -1,0 +1,52 @@
+// Configurações de debug. Escolha uma na aba "Executar e Depurar" (Ctrl+Shift+D) e aperte F5.
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Sobe o Next.js e abre o Edge com o debugger ligado no servidor E no navegador.
+      "name": "Next.js: full stack",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/next/dist/bin/next",
+      "runtimeArgs": ["--inspect"],
+      "skipFiles": ["<node_internals>/**"],
+      "serverReadyAction": {
+        "action": "debugWithEdge",
+        "killOnServerStop": true,
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "webRoot": "${workspaceFolder}"
+      }
+    },
+    {
+      // Qualquer projeto com "npm run dev" (Next.js, Vite, Express...): debug do lado do servidor.
+      "name": "npm run dev (servidor)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev"
+    },
+    {
+      // Rode "npm run dev" antes. Breakpoints funcionam no código React/JS do navegador.
+      "name": "Edge: localhost:5173 (Vite)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Edge: localhost:3000 (Next.js)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      // HTML/CSS/JS puro, sem servidor. Para recarregar ao salvar, use o Live Preview
+      // (botão direito no index.html > "Show Preview").
+      "name": "Edge: abrir index.html",
+      "type": "msedge",
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html"
+    }
+  ]
+}

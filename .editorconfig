@@ -1,0 +1,28 @@
+# https://editorconfig.org — o VS Code (extensão EditorConfig) e a maioria dos
+# editores leem este arquivo, então todo mundo no projeto usa o mesmo estilo.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.py]
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false
+
+[{Makefile,*.mk}]
+indent_style = tab
+
+# O Windows PowerShell 5.1 só lê acentos corretamente em UTF-8 com BOM.
+[*.{ps1,psm1,psd1}]
+charset = utf-8-bom
+indent_size = 4
+
+[*.{bat,cmd}]
+end_of_line = crlf

@@ -1,0 +1,28 @@
+# Ambiente e caches do Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Django / Flask
+db.sqlite3
+media/
+staticfiles/
+instance/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store

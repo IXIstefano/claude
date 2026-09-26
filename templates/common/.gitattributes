@@ -1,0 +1,19 @@
+# Guarda e baixa arquivos de texto sempre com LF (fim de linha do Linux),
+# evitando diffs que mudam só o fim de linha entre Windows, WSL e Docker.
+* text=auto eol=lf
+
+# Scripts do cmd.exe precisam de CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.sqlite3 binary

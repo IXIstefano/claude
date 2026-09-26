@@ -1,0 +1,51 @@
+// Configurações de debug. Escolha uma na aba "Executar e Depurar" (Ctrl+Shift+D) e aperte F5.
+// Ajuste os caminhos (app.main:app, app.py, manage.py) ao seu projeto.
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI (uvicorn)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app.main:app", "--reload", "--port", "8000"],
+      "jinja": true
+    },
+    {
+      "name": "Django (runserver)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": ["runserver", "8000"],
+      "django": true
+    },
+    {
+      "name": "Flask (flask run)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "flask",
+      "env": {
+        "FLASK_APP": "app.py",
+        "FLASK_DEBUG": "1"
+      },
+      "args": ["run", "--no-debugger", "--no-reload", "--port", "5000"],
+      "jinja": true
+    },
+    {
+      "name": "Python: arquivo atual",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      // Usada quando você clica em "Debug Test" na aba de testes.
+      "name": "Python: debug de testes",
+      "type": "debugpy",
+      "request": "launch",
+      "purpose": ["debug-test"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

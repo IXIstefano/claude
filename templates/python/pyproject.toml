@@ -1,0 +1,28 @@
+# Adicione dependências com o uv, por exemplo:
+#   uv add "fastapi[standard]"     (FastAPI)
+#   uv add django                  (Django)
+#   uv add flask                   (Flask)
+[project]
+name = "meu-projeto"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.9",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+# E/W: estilo (PEP 8)  F: erros (pyflakes)  I: ordem dos imports  B: bugs comuns
+# UP: sintaxe moderna  SIM: simplificações  C4: comprehensions  DJ: boas práticas Django
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "C4", "DJ"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

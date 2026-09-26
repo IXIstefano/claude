@@ -1,0 +1,16 @@
+// Configurações deste projeto (sobrepõem as configurações de usuário).
+{
+  // O VS Code encontra sozinho o .venv criado pelo "uv sync".
+  // Se não encontrar: Ctrl+Shift+P > "Python: Select Interpreter" > .venv
+  // Pasta de testes e opções do pytest ficam no pyproject.toml ([tool.pytest.ini_options]).
+  "python.testing.pytestEnabled": true,
+
+  // Templates HTML: descomente a linha do seu framework para ter
+  // destaque de sintaxe e Emmet nas tags {% %} / {{ }}.
+  "files.associations": {
+    // Django:
+    // "**/templates/**/*.html": "django-html"
+    // Flask (Jinja):
+    // "**/templates/**/*.html": "jinja-html"
+  }
+}

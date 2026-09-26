@@ -1,0 +1,11 @@
+{
+  // Extensões sugeridas a quem abrir este projeto no VS Code.
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig",
+    "tamasfe.even-better-toml"
+  ]
+}

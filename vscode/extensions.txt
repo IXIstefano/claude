@@ -1,0 +1,47 @@
+# Extensões do VS Code instaladas pelo scripts/setup-windows.ps1
+# Uma por linha. Linhas iniciadas com "#" são ignoradas.
+# Para desativar uma extensão, comente a linha. Para adicionar, cole o ID
+# (aparece na página da extensão no Marketplace, ex.: "publisher.nome").
+
+# ── Geral ─────────────────────────────────────────────────────────
+editorconfig.editorconfig                 # respeita o .editorconfig de cada projeto
+usernamehw.errorlens                      # mostra erros/avisos na própria linha
+streetsidesoftware.code-spell-checker     # corretor ortográfico (código e Markdown)
+streetsidesoftware.code-spell-checker-portuguese-brazilian
+christian-kohler.path-intellisense        # autocompleta caminhos de arquivos
+gruntfuggly.todo-tree                     # lista TODO/FIXME do projeto
+pkief.material-icon-theme                 # ícones por tipo de arquivo
+yzhang.markdown-all-in-one                # atalhos e preview de Markdown
+redhat.vscode-yaml                        # YAML (GitHub Actions, docker-compose)
+tamasfe.even-better-toml                  # TOML (pyproject.toml)
+humao.rest-client                         # testar APIs com arquivos .http
+ms-vscode.powershell                      # PowerShell (scripts do Windows)
+
+# ── Git / GitHub ──────────────────────────────────────────────────
+mhutchie.git-graph                        # grafo visual de branches e commits
+github.vscode-pull-request-github         # PRs e issues do GitHub no editor
+
+# ── IA ────────────────────────────────────────────────────────────
+anthropic.claude-code                     # Claude Code integrado ao VS Code
+
+# ── Remoto / Containers (para outras stacks sem instalar tudo no Windows)
+ms-vscode-remote.remote-wsl               # abrir projetos dentro do WSL (Linux)
+ms-vscode-remote.remote-containers        # Dev Containers
+ms-azuretools.vscode-containers           # gerenciar imagens/containers Docker
+
+# ── Python (Django / Flask / FastAPI) ─────────────────────────────
+ms-python.python                          # suporte a Python (instala o Python Environments junto)
+ms-python.vscode-pylance                  # autocomplete e checagem de tipos
+ms-python.debugpy                         # debugger
+charliermarsh.ruff                        # lint + formatação (substitui flake8/black/isort)
+ms-toolsai.jupyter                        # notebooks .ipynb
+batisteo.vscode-django                    # templates do Django
+samuelcolvin.jinjahtml                    # templates Jinja (Flask)
+
+# ── Web (HTML / CSS / JS / React / Next.js) ───────────────────────
+esbenp.prettier-vscode                    # formatação
+dbaeumer.vscode-eslint                    # lint JS/TS
+bradlc.vscode-tailwindcss                 # autocomplete do Tailwind CSS
+ecmel.vscode-html-css                     # autocomplete de classes CSS no HTML
+ms-vscode.live-server                     # Live Preview: servidor local com reload automático
+yoavbls.pretty-ts-errors                  # erros de TypeScript legíveis
